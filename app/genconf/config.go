@@ -118,7 +118,7 @@ func (s *Adapter) UnmarshalYAML(unmarshal func(interface{}) error) error {
 	type rawObj Adapter
 	raw := rawObj{
 		MaxConns:     200000,
-		Protocol:     "tars",
+		Protocol:     "taf",
 		QueueCap:     10000,
 		QueueTimeout: 60000,
 		Threads:      5,
@@ -224,7 +224,7 @@ func generateConf(sConf *ServerConf, buildServer, mergeConf string) error {
 	return err
 }
 
-var templateStr = `<tars>
+var templateStr = `<taf>
 <application>
     #是否启用SET分组
 	enableset = {{.EnableSet}}
@@ -313,5 +313,5 @@ var templateStr = `<tars>
         deactivating-timeout = {{.Conf.DeactivatingTimeout}}
     </server>          
 </application>
-</tars>
+</taf>
 `
