@@ -3,10 +3,10 @@ kind: ConfigMap
 metadata:
   name: tars-db-config
 data:
-  DB_HOST: "tars-db.default.svc.cluster.local"
+  DB_HOST: "mysql-service"
   DB_PORT: "3306"
   DB_USER: root
-  DB_PASS: pass
+  DB_PASS: "Fanyijun@2020"
 ---
 apiVersion: apps/v1
 kind: Deployment
