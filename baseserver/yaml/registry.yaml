@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: tars-db-config
 data:
-  DB_HOST: "mysql-mm.mysql-ha"
+  DB_HOST: "mysql-service"
   DB_PORT: "3306"
   DB_USER: root
   DB_PASS: "Fanyijun@2020"
