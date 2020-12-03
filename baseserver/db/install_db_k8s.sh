@@ -3,7 +3,7 @@
 export pod=upload-engine-pod
 export user=root
 export pass=Fanyijun@2020
-export host=mysql-service
+export host=mysql-mm.mysql-ha
 
 kubectl exec ${pod} -- mysql -h ${host} -u${user} -p${pass} -e "create database db_tars" || exit 1
 
