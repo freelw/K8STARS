@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: tars-cppregistry
-        image: ccr.ccs.tencentyun.com/fanyijun/cppregistry:stable
+        image: ccr.ccs.tencentyun.com/fanyijun/cppregistry:v1.1.0
         ports:
           - containerPort: 17890
         env:
@@ -51,7 +51,7 @@ spec:
                 name: tars-db-config
                 key: DB_PASS
       - name: tars-registry
-        image: ccr.ccs.tencentyun.com/fanyijun/tarsregistry:stable
+        image: ccr.ccs.tencentyun.com/fanyijun/tarsregistry:v1.1.1
         env:
           - name: DB_HOST
             valueFrom:
